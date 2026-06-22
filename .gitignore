@@ -1,3 +1,10 @@
 node_modules/
 dist/
 .DS_Store
+
+# Local research + internal strategy docs — NEVER publish to the public Pages repo
+_internal/
+*.pdf
+view-source_*.html
+*.txt
+*cookie*
