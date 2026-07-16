@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex,nofollow">
+<title>Dance Star Brand Guidelines</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,600;0,900;1,900&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+@page{size:1280px 800px;margin:0}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;color:#141110;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:1280px;height:800px;page-break-after:always;position:relative;overflow:hidden;background:#FBF3EB;padding:70px 80px}
+.page.dark{background:#0F0C0A;color:#F4EFE9}
+.disp{font-family:'Archivo',sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:-.02em;line-height:.95}
+.ital{font-style:italic}
+.lbl{font-family:'Space Grotesk',monospace;font-size:13px;letter-spacing:.24em;text-transform:uppercase;font-weight:700}
+.orange{color:#FF4D00}
+.runhead{position:absolute;top:34px;right:80px;font-family:'Space Grotesk',monospace;font-size:12px;letter-spacing:.24em;text-transform:uppercase;font-weight:700;color:#FF4D00}
+.pageno{position:absolute;bottom:30px;right:80px;font-family:'Space Grotesk',monospace;font-size:12px;font-weight:700;color:#7a6f68}
+.rule-top{position:absolute;top:60px;left:80px;right:200px;border-top:1px solid rgba(20,17,16,.15)}
+.dark .rule-top{border-color:rgba(244,239,233,.18)}
+h2.sec{font-size:54px;margin-bottom:16px}
+p.body{font-size:15.5px;line-height:1.6;color:#5c534d;max-width:620px}
+.dark p.body{color:#B8AEA6}
+.star{display:inline-block}
+/* cover */
+.cover{display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.cover .wordmark{font-size:120px;letter-spacing:-.035em}
+.cover .wordmark .s2{color:#FF4D00;display:block}
+/* toc */
+.toccols{display:grid;grid-template-columns:repeat(4,1fr);gap:36px;margin-top:70px}
+.toccols .n{font-family:'Archivo',sans-serif;font-weight:900;font-size:44px;color:#FF4D00;line-height:1}
+.toccols h3{font-family:'Archivo',sans-serif;font-weight:900;text-transform:uppercase;font-size:20px;margin:10px 0 12px;letter-spacing:-.01em}
+.toccols li{list-style:none;font-size:13.5px;color:#5c534d;line-height:1.9}
+/* divider */
+.divider{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.divider .n{font-family:'Archivo',sans-serif;font-weight:900;font-size:30px;color:#FF4D00}
+.divider h2{font-size:84px;margin:8px 0 24px}
+.divider p{font-size:16px;color:#5c534d;line-height:2}
+.watermark{position:absolute;right:-140px;bottom:-160px;width:560px;opacity:.06}
+/* foundation */
+.f-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;margin-top:44px}
+.f-block h4{font-family:'Space Grotesk',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#FF4D00;margin-bottom:10px;font-weight:700}
+.f-block p{font-size:14.5px;line-height:1.65;color:#5c534d}
+.f-block .big{font-family:'Archivo',sans-serif;font-weight:900;font-style:italic;text-transform:uppercase;font-size:26px;line-height:1.1;color:#141110;letter-spacing:-.01em}
+/* architecture */
+.a-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
+.a-card{border:1.5px solid rgba(20,17,16,.16);border-radius:16px;padding:26px;background:#fff}
+.a-card.reco{border:2.5px solid #FF4D00}
+.a-card .tag{display:inline-block;font-family:'Space Grotesk',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;padding:4px 11px;border-radius:99px;background:#FFD9C2;margin-bottom:14px}
+.a-card.reco .tag{background:#FF4D00;color:#FBF3EB}
+.a-card h3{font-family:'Archivo',sans-serif;font-weight:900;text-transform:uppercase;font-size:19px;letter-spacing:-.01em}
+.a-card .when{font-family:'Space Grotesk',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#FF4D00;margin:5px 0 12px;font-weight:700}
+.a-card p{font-size:12.8px;line-height:1.55;color:#5c534d;margin-bottom:12px}
+.a-card .diag{font-family:'Space Grotesk',monospace;font-size:11.5px;line-height:1.9;border-top:1px solid rgba(20,17,16,.14);padding-top:12px}
+.a-card .diag b{color:#FF4D00}
+/* palette pages */
+.pal{padding:60px 80px}
+.pal .head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:26px}
+.pal h2.sec{margin-bottom:8px}
+.pal .meta{font-family:'Space Grotesk',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700}
+.swrow{display:grid;gap:10px;margin-bottom:18px}
+.swcell{border-radius:12px;padding:16px 16px 12px;display:flex;flex-direction:column;justify-content:space-between;min-height:190px}
+.swcell .nm{font-family:'Archivo',sans-serif;font-weight:900;text-transform:uppercase;font-size:15px;letter-spacing:0}
+.swcell .codes{font-family:'Space Grotesk',monospace;font-size:11px;line-height:1.75;font-weight:500}
+.pal .verdict{display:grid;grid-template-columns:1fr 1fr 1fr;gap:22px;margin-top:6px}
+.pal .verdict h5{font-family:'Space Grotesk',monospace;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:#FF4D00;margin-bottom:6px;font-weight:700}
+.pal .verdict p{font-size:12.3px;line-height:1.55;color:#5c534d}
+.pal.darkpal .verdict p{color:#B8AEA6}
+.pal.darkpal .verdict h5{color:inherit}
+.demo-btn{display:inline-block;font-family:'Space Grotesk',monospace;font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;border-radius:99px;padding:12px 26px;margin-top:10px}
+/* typography page */
+.type-spec{margin-top:40px}
+.type-spec .row{display:grid;grid-template-columns:300px 1fr;gap:40px;padding:26px 0;border-top:1px solid rgba(20,17,16,.14);align-items:center}
+.type-spec .who{font-family:'Space Grotesk',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#FF4D00}
+.type-spec .who small{display:block;color:#7a6f68;letter-spacing:.06em;margin-top:6px;text-transform:none;font-weight:500}
+/* rules page */
+.rules2{display:grid;grid-template-columns:1fr 1fr;gap:16px 44px;margin-top:40px}
+.rl{display:flex;gap:14px;font-size:14.5px;line-height:1.5;color:#5c534d}
+.rl b{color:#141110}
+.rl .ic{color:#FF4D00;font-weight:900;flex-shrink:0;font-size:16px}
+/* reco page */
+.reco-hero{display:flex;gap:60px;align-items:center;margin-top:40px}
+.reco-chip{width:340px;height:340px;border-radius:24px;background:#FF4D00;color:#FBF3EB;display:flex;flex-direction:column;justify-content:space-between;padding:30px;flex-shrink:0}
+.reco-chip .wm{font-family:'Archivo',sans-serif;font-weight:900;font-style:italic;text-transform:uppercase;font-size:34px;letter-spacing:-.02em;line-height:.95}
+.reco-chip .cd{font-family:'Space Grotesk',monospace;font-size:12px;line-height:1.8;font-weight:500}
+.next li{font-size:14.5px;color:#5c534d;line-height:1.6;margin-bottom:12px;list-style:none;display:flex;gap:12px}
+.next li b{color:#141110}
+.next .st{color:#FF4D00;font-weight:900}
+</style>
+</head>
+<body>
+<style id="bsw-style">
+#brand-switcher{position:fixed;bottom:20px;right:20px;z-index:100000;display:flex;gap:4px;padding:5px;background:rgba(15,12,10,.92);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border:1px solid rgba(255,77,0,.35);border-radius:100px;box-shadow:0 10px 34px rgba(0,0,0,.5);font-family:'Inter',system-ui,-apple-system,sans-serif}
+#brand-switcher a{text-decoration:none;color:#CFC6BE;font-size:12.5px;font-weight:600;letter-spacing:.01em;padding:8px 16px;border-radius:100px;line-height:1;display:inline-flex;align-items:center;transition:color .2s,background .2s;white-space:nowrap}
+#brand-switcher a:hover{color:#fff;background:rgba(255,255,255,.08)}
+#brand-switcher a.bsw-active{background:linear-gradient(180deg,#FF6A2B,#FF4D00);color:#160604;box-shadow:0 2px 10px rgba(255,77,0,.4)}
+@media(max-width:520px){#brand-switcher{bottom:12px;right:12px;left:12px;justify-content:center}#brand-switcher a{padding:8px 12px;font-size:11.5px}}
+@media print{#brand-switcher{display:none}}
+</style>
+<nav id="brand-switcher" aria-label="Dance Star brand views">
+  <a href="../">Site</a>
+  <a href="./guide.html" class="bsw-active" aria-current="page">Brand Guide</a>
+  <a href="./explorer.html">Explorer</a>
+</nav>
+
+<!-- 01 COVER -->
+<div class="page dark cover">
+  <svg class="watermark" viewBox="0 0 100 100" fill="#FF4D00"><polygon points="50,4 61,38 97,38 68,60 79,94 50,73 21,94 32,60 3,38 39,38"/></svg>
+  <div class="lbl orange" style="margin-bottom:26px">Brand Guidelines + Palette Exploration</div>
+  <div class="disp ital cover-wordmark wordmark" style="font-size:118px;letter-spacing:-.035em">Dance<span class="s2">Star<span style="color:#F4EFE9">*</span></span></div>
+  <div style="margin-top:40px;font-size:16px;color:#B8AEA6;max-width:560px;line-height:1.7">The aggregator for the US dance community. Five palette systems, three architecture models, one star. July 2026.</div>
+</div>
+
+<!-- 02 TOC -->
+<div class="page">
+  <div class="rule-top"></div><div class="runhead">2026 Brand Guide</div>
+  <h2 class="disp sec" style="margin-top:60px">Table of<br>Contents</h2>
+  <div class="toccols">
+    <div><div class="n">1</div><h3>Foundation</h3><ul><li>Positioning</li><li>Personality</li><li>Voice</li><li>The star motif</li></ul></div>
+    <div><div class="n">2</div><h3>Architecture</h3><ul><li>Endorsed launch</li><li>Sibling system</li><li>The flip</li><li>Rules vs PBD red</li></ul></div>
+    <div><div class="n">3</div><h3>Color</h3><ul><li>01 Marquee ★</li><li>02 Afterhours</li><li>03 Heatwave</li><li>04 Ultraviolet</li><li>05 Spotlight</li></ul></div>
+    <div><div class="n">4</div><h3>Execution</h3><ul><li>Typography</li><li>Co-brand rules</li><li>Recommendation</li><li>Next steps</li></ul></div>
+  </div>
+  <div class="pageno">02</div>
+</div>
+
+<!-- 03 FOUNDATION -->
+<div class="page">
+  <div class="rule-top"></div><div class="runhead">2026 Brand Guide</div>
+  <div class="lbl orange" style="margin-top:50px;margin-bottom:14px">#1 / Foundation</div>
+  <h2 class="disp sec">Every floor. One star.</h2>
+  <p class="body">Dance Star is a marketplace: dancers find classes, socials, and instructors; studios find rooms full of beginners. It launches in Phoenix on the back of Phoenix Bachata Dance and is built to outgrow it. The brand is designed for the champion stage and worn casually in the crackpot stage, so nothing needs a rebrand on the way up.</p>
+  <div class="f-grid">
+    <div class="f-block">
+      <h4>Positioning</h4>
+      <p>For dancers who want more nights on the floor, Dance Star is the one place every class, social, and instructor in the scene shows up. Studios run their brands; Dance Star runs the room.</p>
+    </div>
+    <div class="f-block">
+      <h4>Personality</h4>
+      <p><b>Magnetic</b> like a Friday social, <b>beginner-obsessed</b> like the academy that built it, <b>credible</b> enough for studios to trust it with bookings and revenue.</p>
+    </div>
+    <div class="f-block">
+      <h4>Voice</h4>
+      <p class="big">"See you on the dance floor."</p>
+      <p style="margin-top:10px">Warm, direct, second person. Always reassures beginners they belong. Never corporate, never breathless.</p>
+    </div>
+    <div class="f-block">
+      <h4>The star motif</h4>
+      <p>A five point star is the shared thread across every palette and every future sub-brand: the rating, the wordmark separator, the map pin, the loading spinner. One shape doing four jobs beats four decorations.</p>
+    </div>
+  </div>
+  <div class="pageno">03</div>
+</div>
+
+<!-- 04 ARCHITECTURE -->
+<div class="page">
+  <div class="rule-top"></div><div class="runhead">2026 Brand Guide</div>
+  <div class="lbl orange" style="margin-top:44px;margin-bottom:12px">#2 / Brand Architecture</div>
+  <h2 class="disp sec" style="font-size:46px">Three models, one path</h2>
+  <p class="body" style="max-width:900px">Parent brand or sub-brand is a timing question, and the answer changes as Dance Star grows. One visual law holds in every model: Dance Star never wears Phoenix Bachata red (#E12330). Adjacency, never inheritance.</p>
+  <div class="a-grid">
+    <div class="a-card reco">
+      <span class="tag">Start here</span>
+      <h3>Endorsed launch</h3>
+      <div class="when">Stage 01 / Now</div>
+      <p>Dance Star leads with its own name and palette. PBD appears as a text endorsement only, never as color or logo on Dance Star surfaces. Borrows trust with zero visual debt.</p>
+      <div class="diag"><b>DANCE STAR</b><br>"from the team behind<br>Phoenix Bachata Dance"</div>
+    </div>
+    <div class="a-card">
+      <span class="tag">Grow into</span>
+      <h3>Sibling system</h3>
+      <div class="when">Stage 02 / Challenger</div>
+      <p>Dance Star becomes the platform brand; PBD becomes its founding listed studio with permanent "Founding Studio" placement. Separate palettes, shared star motif.</p>
+      <div class="diag"><b>DANCE STAR</b> (platform)<br>├ Phoenix Bachata Dance ★<br>├ Studio B ├ Studio C ...</div>
+    </div>
+    <div class="a-card">
+      <span class="tag">End game</span>
+      <h3>The flip</h3>
+      <div class="when">Stage 03 / Champion</div>
+      <p>Dance Star is the parent. Studios adopt "a Dance Star studio" and keep their local colors, PBD red included. The platform palette stays untouchable underneath them all.</p>
+      <div class="diag">Phoenix Bachata Dance<br><b>a DANCE STAR studio</b></div>
+    </div>
+  </div>
+  <div class="pageno">04</div>
+</div>
+
+<!-- 05 PALETTE DIVIDER -->
+<div class="page divider">
+  <svg class="watermark" viewBox="0 0 100 100" fill="#141110"><polygon points="50,4 61,38 97,38 68,60 79,94 50,73 21,94 32,60 3,38 39,38"/></svg>
+  <div class="n">#3</div>
+  <h2 class="disp">Color</h2>
+  <p>Five systems. Each with a single chromatic voice, a quiet canvas, and one job:<br>make "book this" feel inevitable. HEX and RGB for digital, CMYK for print.<br>The star marks the recommendation.</p>
+  <div class="pageno">05</div>
+</div>
+
+<!-- 06 MARQUEE -->
+<div class="page pal">
+  <div class="runhead">2026 Brand Guide</div>
+  <div class="head">
+    <div>
+      <div class="lbl orange">Palette 01 / Recommended ★</div>
+      <h2 class="disp sec" style="font-size:58px;color:#FF4D00">Marquee</h2>
+      <div style="font-size:14px;color:#5c534d;max-width:660px;line-height:1.55">The orange. A signal orange on warm bone with a reserved gold spark. One step away from PBD red: reads as family, never as the same brand. Highest urgency of the five.</div>
+    </div>
+    <span class="demo-btn" style="background:#FF4D00;color:#FBF3EB">Grab a spot</span>
+  </div>
+  <div class="swrow" style="grid-template-columns:repeat(6,1fr)">
+    <div class="swcell" style="background:#FF4D00;color:#FBF3EB"><div class="nm">Star Orange</div><div class="codes">HEX FF4D00<br>RGB 255, 77, 0<br>CMYK 0, 70, 100, 0<br><br>The voice. CTAs, links, wordmark star.</div></div>
+    <div class="swcell" style="background:#C23A00;color:#FBF3EB"><div class="nm">Ember</div><div class="codes">HEX C23A00<br>RGB 194, 58, 0<br>CMYK 0, 70, 100, 24<br><br>Hover, pressed, small orange type.</div></div>
+    <div class="swcell" style="background:#FFB800;color:#141110"><div class="nm">Star Gold</div><div class="codes">HEX FFB800<br>RGB 255, 184, 0<br>CMYK 0, 28, 100, 0<br><br>Ratings and stars only. Never a button.</div></div>
+    <div class="swcell" style="background:#FBF3EB;color:#141110;border:1px solid rgba(20,17,16,.15)"><div class="nm">Bone</div><div class="codes">HEX FBF3EB<br>RGB 251, 243, 235<br>CMYK 0, 3, 6, 2<br><br>Page canvas. Warm paper.</div></div>
+    <div class="swcell" style="background:#FFD9C2;color:#141110"><div class="nm">Peach Wash</div><div class="codes">HEX FFD9C2<br>RGB 255, 217, 194<br>CMYK 0, 15, 24, 0<br><br>Tints, chips, stat cards.</div></div>
+    <div class="swcell" style="background:#141110;color:#FBF3EB"><div class="nm">Ink</div><div class="codes">HEX 141110<br>RGB 20, 17, 16<br>CMYK 0, 15, 20, 92<br><br>All reading text.</div></div>
+  </div>
+  <div class="verdict">
+    <div><h5>Action energy</h5><p>Orange is the strongest "do it now" color that is still ownable; red is taken, yellow needs dark ground. This is the palette built for conversion.</p></div>
+    <div><h5>Fit vs PBD red</h5><p>Adjacent-warm. Side by side they read as relatives. Passes the co-brand strip test with the cleanest family story of the five.</p></div>
+    <div><h5>Watch out</h5><p>Orange on bone fails AA for small text; use Ember for small orange type and Ink for body copy. Voice stays at roughly 10% of any surface.</p></div>
+  </div>
+  <div class="pageno">06</div>
+</div>
+
+<!-- 07 AFTERHOURS -->
+<div class="page pal darkpal dark" style="background:#0A0A0A">
+  <div class="runhead" style="color:#FFB000">2026 Brand Guide</div>
+  <div class="head">
+    <div>
+      <div class="lbl" style="color:#FFB000">Palette 02</div>
+      <h2 class="disp sec" style="font-size:58px;color:#FFB000">Afterhours</h2>
+      <div style="font-size:14px;color:#B8AEA6;max-width:660px;line-height:1.55">The yellow, gone nocturnal. Marquee amber on true stage black. Four colors, skeletal on purpose: film credits and 9 PM energy. Event photography hangs directly on the black.</div>
+    </div>
+    <span class="demo-btn" style="background:#FFB000;color:#0A0A0A">Grab a spot</span>
+  </div>
+  <div class="swrow" style="grid-template-columns:repeat(4,1fr)">
+    <div class="swcell" style="background:#FFB000;color:#0A0A0A"><div class="nm">Marquee Amber</div><div class="codes">HEX FFB000<br>RGB 255, 176, 0<br>CMYK 0, 31, 100, 0<br><br>The voice. CTAs, links, live indicators.</div></div>
+    <div class="swcell" style="background:#0A0A0A;color:#F4EFE9;border:1px solid rgba(244,239,233,.2)"><div class="nm">Void</div><div class="codes">HEX 0A0A0A<br>RGB 10, 10, 10<br>CMYK 0, 0, 0, 96<br><br>Page canvas. Pure stage black.</div></div>
+    <div class="swcell" style="background:#F4EFE9;color:#141110"><div class="nm">Bone White</div><div class="codes">HEX F4EFE9<br>RGB 244, 239, 233<br>CMYK 0, 2, 5, 4<br><br>All text. Film stock, warm.</div></div>
+    <div class="swcell" style="background:#9A9A9A;color:#0A0A0A"><div class="nm">Ash</div><div class="codes">HEX 9A9A9A<br>RGB 154, 154, 154<br>CMYK 0, 0, 0, 40<br><br>Muted labels, hairlines.</div></div>
+  </div>
+  <div class="verdict">
+    <div><h5>Action energy</h5><p>Amber on black glows harder than any light-mode option. Strongest for socials, events, and nightlife content; a strong yellow, staged correctly.</p></div>
+    <div><h5>Fit vs PBD red</h5><p>Warm neighbor with maximum surface contrast: PBD lives on wine darks, Dance Star on true black. Clear separation, same body heat.</p></div>
+    <div><h5>Watch out</h5><p>Dark UI is harsher for daytime class browsing and print collateral. Best as the events layer if Marquee wins the platform.</p></div>
+  </div>
+  <div class="pageno">07</div>
+</div>
+
+<!-- 08 HEATWAVE -->
+<div class="page pal" style="background:#F6F2EE">
+  <div class="runhead">2026 Brand Guide</div>
+  <div class="head">
+    <div>
+      <div class="lbl" style="color:#F5197B">Palette 03</div>
+      <h2 class="disp sec" style="font-size:58px;color:#F5197B">Heatwave</h2>
+      <div style="font-size:14px;color:#5c534d;max-width:660px;line-height:1.55">Hot fuchsia on oat paper. Editorial, poster-loud headlines, calm everywhere else. The most Instagram-native option and the closest cousin to the Playful reference.</div>
+    </div>
+    <span class="demo-btn" style="background:#F5197B;color:#fff">Grab a spot</span>
+  </div>
+  <div class="swrow" style="grid-template-columns:repeat(6,1fr)">
+    <div class="swcell" style="background:#F5197B;color:#fff"><div class="nm">Hot Fuchsia</div><div class="codes">HEX F5197B<br>RGB 245, 25, 123<br>CMYK 0, 90, 50, 4<br><br>The voice. CTAs, links, logo mark.</div></div>
+    <div class="swcell" style="background:#C40E5F;color:#fff"><div class="nm">Deep Rose</div><div class="codes">HEX C40E5F<br>RGB 196, 14, 95<br>CMYK 0, 93, 52, 23<br><br>Hover, pressed, small type.</div></div>
+    <div class="swcell" style="background:#F6F2EE;color:#111;border:1px solid rgba(17,17,17,.14)"><div class="nm">Oat</div><div class="codes">HEX F6F2EE<br>RGB 246, 242, 238<br>CMYK 0, 2, 3, 4<br><br>Page canvas. Cream paper.</div></div>
+    <div class="swcell" style="background:#FBE2ED;color:#111"><div class="nm">Rose Wash</div><div class="codes">HEX FBE2ED<br>RGB 251, 226, 237<br>CMYK 0, 10, 6, 2<br><br>Tints, chips, washes.</div></div>
+    <div class="swcell" style="background:#111111;color:#F6F2EE"><div class="nm">Ink</div><div class="codes">HEX 111111<br>RGB 17, 17, 17<br>CMYK 0, 0, 0, 93<br><br>Reading text, headlines.</div></div>
+    <div class="swcell" style="background:#E8E1DA;color:#111"><div class="nm">Warm Mist</div><div class="codes">HEX E8E1DA<br>RGB 232, 225, 218<br>CMYK 0, 3, 6, 9<br><br>Hairlines, dividers.</div></div>
+  </div>
+  <div class="verdict">
+    <div><h5>Action energy</h5><p>High heat, more social than urgent. Fuchsia converts on lifestyle audiences and photographs beautifully against skin tones and stage lighting.</p></div>
+    <div><h5>Fit vs PBD red</h5><p>Further from red than the orange, same warm family. Risk: pink and red on one flyer can drift toward Valentine territory; the co-brand rules prevent it.</p></div>
+    <div><h5>Watch out</h5><p>Reads feminine-leaning for a platform that also courts salsa congress organizers and studio owners. Strong sub-brand candidate for socials.</p></div>
+  </div>
+  <div class="pageno">08</div>
+</div>
+
+<!-- 09 ULTRAVIOLET -->
+<div class="page pal darkpal dark" style="background:#07060B">
+  <div class="runhead" style="color:#7C4DFF">2026 Brand Guide</div>
+  <div class="head">
+    <div>
+      <div class="lbl" style="color:#7C4DFF">Palette 04</div>
+      <h2 class="disp sec" style="font-size:58px;color:#7C4DFF">Ultraviolet</h2>
+      <div style="font-size:14px;color:#B8AEA6;max-width:660px;line-height:1.55">Electric iris on violet-cast black with a saffron spark, the only two-voice system in the set. Stage lighting and tech platform in the same breath. Maximum distance from PBD red.</div>
+    </div>
+    <span class="demo-btn" style="background:#7C4DFF;color:#fff">Grab a spot</span>
+  </div>
+  <div class="swrow" style="grid-template-columns:repeat(5,1fr)">
+    <div class="swcell" style="background:#7C4DFF;color:#fff"><div class="nm">Electric Iris</div><div class="codes">HEX 7C4DFF<br>RGB 124, 77, 255<br>CMYK 51, 70, 0, 0<br><br>The voice. CTAs, links, brand mark.</div></div>
+    <div class="swcell" style="background:#FFB829;color:#141110"><div class="nm">Saffron Spark</div><div class="codes">HEX FFB829<br>RGB 255, 184, 41<br>CMYK 0, 28, 84, 0<br><br>Second voice, rationed. Ratings, streaks.</div></div>
+    <div class="swcell" style="background:#07060B;color:#fff;border:1px solid rgba(255,255,255,.18)"><div class="nm">Void</div><div class="codes">HEX 07060B<br>RGB 7, 6, 11<br>CMYK 36, 45, 0, 96<br><br>Page canvas. Violet-cast black.</div></div>
+    <div class="swcell" style="background:#FFFFFF;color:#141110"><div class="nm">White</div><div class="codes">HEX FFFFFF<br>RGB 255, 255, 255<br>CMYK 0, 0, 0, 0<br><br>Headlines, primary text.</div></div>
+    <div class="swcell" style="background:#BDBDBD;color:#141110"><div class="nm">Silver</div><div class="codes">HEX BDBDBD<br>RGB 189, 189, 189<br>CMYK 0, 0, 0, 26<br><br>Muted copy, labels.</div></div>
+  </div>
+  <div class="verdict">
+    <div><h5>Action energy</h5><p>Violet signals product more than party; saffron carries the urgency moments. Gamified loops (streaks, badges) feel native here.</p></div>
+    <div><h5>Fit vs PBD red</h5><p>Total separation. Nobody will read them as one company, which is exactly right if the flip is the plan and investors are in the room.</p></div>
+    <div><h5>Watch out</h5><p>Violet-on-dark is the default costume of AI and SaaS startups in 2026. Ownable in dance, crowded everywhere else.</p></div>
+  </div>
+  <div class="pageno">09</div>
+</div>
+
+<!-- 10 SPOTLIGHT -->
+<div class="page pal darkpal dark" style="background:#0B1020">
+  <div class="runhead" style="color:#3D7BFF">2026 Brand Guide</div>
+  <div class="head">
+    <div>
+      <div class="lbl" style="color:#3D7BFF">Palette 05</div>
+      <h2 class="disp sec" style="font-size:58px;color:#3D7BFF">Spotlight</h2>
+      <div style="font-size:14px;color:#B8AEA6;max-width:660px;line-height:1.55">One cobalt spotlight on a midnight stage, straight from the black-box cinema playbook. The calmest and most institutional option: infrastructure first, party second.</div>
+    </div>
+    <span class="demo-btn" style="background:#3D7BFF;color:#fff">Grab a spot</span>
+  </div>
+  <div class="swrow" style="grid-template-columns:repeat(4,1fr)">
+    <div class="swcell" style="background:#3D7BFF;color:#fff"><div class="nm">Spotlight Cobalt</div><div class="codes">HEX 3D7BFF<br>RGB 61, 123, 255<br>CMYK 76, 52, 0, 0<br><br>The voice. CTAs, links, roster names.</div></div>
+    <div class="swcell" style="background:#0B1020;color:#F4EFE9;border:1px solid rgba(244,239,233,.18)"><div class="nm">Midnight Stage</div><div class="codes">HEX 0B1020<br>RGB 11, 16, 32<br>CMYK 66, 50, 0, 87<br><br>Page canvas. Navy-black.</div></div>
+    <div class="swcell" style="background:#F4EFE9;color:#141110"><div class="nm">Bone White</div><div class="codes">HEX F4EFE9<br>RGB 244, 239, 233<br>CMYK 0, 2, 5, 4<br><br>All text. Warm vs the cool stage.</div></div>
+    <div class="swcell" style="background:#9AA3B2;color:#0B1020"><div class="nm">Slate Mist</div><div class="codes">HEX 9AA3B2<br>RGB 154, 163, 178<br>CMYK 13, 8, 0, 30<br><br>Muted labels, secondary copy.</div></div>
+  </div>
+  <div class="verdict">
+    <div><h5>Action energy</h5><p>Lowest urgency, highest credibility. Blue converts trust: payments, memberships, studio payouts. The booking button persuades rather than shouts.</p></div>
+    <div><h5>Fit vs PBD red</h5><p>Cool against warm, full separation. Cleanest pairing on a shared flyer since neither color bleeds into the other.</p></div>
+    <div><h5>Watch out</h5><p>Blue is every marketplace's default (booking, payments, tech). Hardest of the five to own; the warm bone text is what keeps it from going generic.</p></div>
+  </div>
+  <div class="pageno">10</div>
+</div>
+
+<!-- 11 TYPOGRAPHY -->
+<div class="page">
+  <div class="rule-top"></div><div class="runhead">2026 Brand Guide</div>
+  <div class="lbl orange" style="margin-top:44px;margin-bottom:12px">#4 / Typography</div>
+  <h2 class="disp sec" style="font-size:46px">Type does the dancing</h2>
+  <p class="body" style="max-width:900px">One display face with real personality, one workhorse, one label voice. All free on Google Fonts, so studios and contractors can reproduce everything without licenses. Hierarchy comes from size and slant, never from adding more families.</p>
+  <div class="type-spec">
+    <div class="row">
+      <div class="who">Archivo Black Italic<small>Display / headlines, wordmark, posters. Uppercase, tight tracking (-0.03em), sizes 40 to 160px.</small></div>
+      <div class="disp ital" style="font-size:52px">Every floor. <span class="orange">One star.</span></div>
+    </div>
+    <div class="row">
+      <div class="who">Inter<small>Body / UI copy, descriptions, forms. 400 to 700, 14 to 18px, generous line height.</small></div>
+      <div style="font-size:17px;color:#5c534d;line-height:1.6;max-width:640px">Friday's social starts with a 9 PM beginner class. No partner needed, no experience needed. Grab a spot and we will see you on the dance floor.</div>
+    </div>
+    <div class="row">
+      <div class="who">Space Grotesk<small>Labels / eyebrows, buttons, data, timestamps. 500 to 700, uppercase, letter spacing +0.1 to +0.24em.</small></div>
+      <div class="lbl" style="color:#141110;font-size:15px">FRI JUL 10 · 9:00 PM · PROVISION · <span class="orange">7 SPOTS LEFT</span></div>
+    </div>
+  </div>
+  <div class="pageno">11</div>
+</div>
+
+<!-- 12 RECOMMENDATION -->
+<div class="page">
+  <div class="rule-top"></div><div class="runhead">2026 Brand Guide</div>
+  <div class="lbl orange" style="margin-top:44px;margin-bottom:12px">#5 / Recommendation</div>
+  <h2 class="disp sec" style="font-size:46px">Marquee, endorsed launch</h2>
+  <div class="reco-hero">
+    <div class="reco-chip">
+      <div class="wm">Dance<br>Star<span style="color:#FFB800">*</span></div>
+      <div class="cd">STAR ORANGE<br>HEX FF4D00 · RGB 255, 77, 0<br>CMYK 0, 70, 100, 0<br><br>from the team behind<br>Phoenix Bachata Dance</div>
+    </div>
+    <div>
+      <ul class="next">
+        <li><span class="st">01</span><span><b>Pick the palette.</b> Marquee is the recommendation: the orange converts hardest, owns a lane no dance platform holds, and passes the co-brand test next to PBD red with the best family story. Afterhours amber is the runner-up and works as the future events layer.</span></li>
+        <li><span class="st">02</span><span><b>Adopt the endorsed launch model now.</b> Dance Star surfaces carry its own palette plus one text line crediting Phoenix Bachata Dance. Revisit the sibling model when a second city goes live.</span></li>
+        <li><span class="st">03</span><span><b>Reskin the live site.</b> Swap the current PBD-red Dance Star site to the chosen system; type stack changes to Archivo Black Italic + Inter + Space Grotesk.</span></li>
+        <li><span class="st">04</span><span><b>Commission the wordmark.</b> Lock the star separator and a proper logo lockup once the palette is settled; then extend to IG templates, class flyers, and the booking flow.</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="pageno">12</div>
+</div>
+
+</body>
+</html>
